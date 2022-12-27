@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Template</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="header-inner d-flex align-items-center justify-content-between">
+                <div class="img-wrapper">
+                     <a href="index.html">
+                        <img src="./img/logo.png" class="img-fluid" alt="logo">
+                    </a>
+                </div>
+                <button id="toggle-btn"><i class="fa fa-bars"></i> </button>
+
+                <div class="navigation">
+                    <ul class="menu-area d-flex justify-content-center align-items-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link ">Ana Sayfa</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Kurumsal</a></li>
+                        <li class="nav-item"><a href="doctors.html" class="nav-link">Doktorlar</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="services.html" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Tedavilerimiz</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="service-detail.html">Diş Beyazlatma</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">Gummy Smile</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">İmplant Tedavisi</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">Lamine Kaplama</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">Kanal Tedavisi</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">Porselen Kaplama</a></li>
+                                <li><a class="dropdown-item" href="service-detail.html">Diş Taşı Temizliği</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Galeri</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link active"> İletişim</a></li>
+                    </ul>
+                    <div class="language d-xl-none d-flex justify-content-center align-items-center">
+                        <img src="./img/world.png" class="img-fluid" alt="world">
+                        <ul class="d-flex align-items-center">
+                            <li class="nav-item active">TR</li>
+                            <li class="nav-item">ENG</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="language d-xl-flex d-none justify-content-center align-items-center">
+                    <img src="./img/world.png" class="img-fluid" alt="world">
+                    <ul class="d-flex align-items-center">
+                        <li class="nav-item active">TR</li>
+                        <li class="nav-item">ENG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sub-banner d-flex flex-column justify-content-end align-items-center" style="background: url(./img/subbanner.jpg) no-repeat;
+    background-size: cover; background-position: center;">
+        <div class="container-fluid">
+            <h2>İletişim</h2>
+        </div>
+    </section>
+    <section class="contact-page">
+        <div class="container-fluid">
+            <h4>İletişim Bilgileri</h4>
+            <div class="contact-area">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-area">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="fullname">Ad Soyad*</label>
+                                    <input type="text" class="form-control" id="fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefon Numaranız*</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-Posta*</label>
+                                    <input type="text" class="form-control" id="email">
+                                </div>
+                                <div class="form-group d-flex flex-column">
+                                    <label for="email">Mesajınız*</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="btn">GÖNDER</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-area">
+                            <h5>Bütün sorularınız için bu iletişim
+                                kanallarımızdan ulaşabilirsiniz.
+                            </h5>
+                            <div>
+                                <div class="contact-item">
+                                    <h6>ADRES</h6>
+                                    <p>Türkçü Sokak Zeytinlik Mahallesi Ferah Palas Apartman A Blok
+                                        No:16 Daire:9 Kat:4 Bakırköy İSTANBUL </p>
+                                </div>
+                                <div class="contact-item">
+                                    <h6>TELEFON</h6>
+                                    <ul>
+                                        <li><a href="tel:+90 535 123 45 67">+90 535 123 45 67 </a></li>
+                                        <li><a href="tel:0 (212) 123 45 67">0 (212) 123 45 67</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="contact-item">
+                                    <h6>E-POSTA</h6>
+                                    <ul>
+                                        <li><a href="mailto:info@bilgi.com">info@bilgi.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="box text-center d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="./img/wp-logo.png" class="img-fluid" alt="">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        </p>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+90 535 123 45 67">+90 535 123 45 67</a>
+                            <a href="tel:+90 535 123 45 67">+90 535 123 45 67</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="box text-center d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="./img/email.png" class="img-fluid" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                        <div class="d-flex flex-column">
+                            <a href="mailto:info@bilgi.com">info@bilgi.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="box text-center d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="./img/phone.png" class="img-fluid" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+90 212 123 45 67">+90 212 123 45 67</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <div class="row">
+            <div class="col-lg-6 left-area">
+                <div class="left-top">
+                    <div class="top d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./img/logo.png" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <ul class="d-flex align-items-center justify-content-center">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <h4>HAKKIMIZDA</h4>
+
+
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+
+                        </P>
+                        <a href="about.html" class="btn">Detaylı Bilgi</a>
+                    </div>
+                </div>
+                <div class="copyright w-100 d-flex justify-content-between align-items-center">
+                    <span>Tüm hakları saklıdır...</span>
+                    <a href="https://www.wucize.com/"> <img src="./img/wucize-footer.png" class="img-fluid" alt="wucize"></a>
+                </div>
+            </div>
+            <div class="col-lg-6 right-area d-xl-block d-none">
+                <div class="contact d-xl-flex d-none justify-content-start flex-column">
+                    <div class="clinick-area">
+                        <h4>Klinik GALERİ</h4>
+                        <div class="row">
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick.png" data-fancybox="gallery">
+                                    <img src="./img/clinick.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick2.png" data-fancybox="gallery">
+                                    <img src="./img/clinick2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick.png" data-fancybox="gallery">
+                                    <img src="./img/clinick.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick2.png" data-fancybox="gallery">
+                                    <img src="./img/clinick2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick.png" data-fancybox="gallery">
+                                    <img src="./img/clinick.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <a href="./img/clinick2.png" data-fancybox="gallery">
+                                    <img src="./img/clinick2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.0864253127293!2d28.870207015661308!3d40.97958832913813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd671f7391b7%3A0x9f90d1a19c5df6d2!2zV3VjaXplIHwgV2ViIFRhc2FyxLFtICwgw5xyw7xuIEZvdG_En3JhZiDDh2VraW1pLCBUYW7EsXTEsW0gRmlsbWk!5e0!3m2!1str!2str!4v1667916636138!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- wpp-btn-mobile -->
+    <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div">
+        <a id="WhatsApp-button" href="https://api.whatsapp.com/send?phone=905547493125&text=Merhaba%20" target=”_blank” target="_blank" class="phoneJs">
+            <div class="cbh-ph-circle"></div>
+            <div class="cbh-ph-circle-fill"></div>
+            <div class="cbh-ph-img-circle1"></div>
+        </a>
+    </div>
+    <!-- wpp-btn-mobile -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
