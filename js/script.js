@@ -21,6 +21,15 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 100);
 });
 
+$(function () {
+  $("#datepicker").datepicker({
+    autoclose: true,
+    todayHighlight: true,
+    allowInputToggle: true,
+  });
+  /* .datepicker("update", new Date()); */
+});
+
 var swiper = new Swiper(".mySwiperBanner", {});
 
 var swiperContent = new Swiper(".mySwiperContent", {
@@ -172,6 +181,31 @@ var swiper = new Swiper(".mySwiperDoctors", {
   },
 });
 
+var swiper = new Swiper(".mySwiperGalleryArea", {
+  spaceBetween: 0,
+  autoplay: {
+    delay: 1500,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+  },
+});
+
 // Fancybox Config
 $('[data-fancybox="gallery"]').fancybox({
   buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "share", "close"],
@@ -196,3 +230,5 @@ setInterval(function () {
     stepLi.eq(val).addClass("active");
   }
 }, 4000);
+
+
