@@ -392,9 +392,15 @@ header {
         @media screen and (max-width: $lg-breakpoint) {
             padding: 1rem 1rem 0.5rem 1rem;
         }
+        @media screen and (max-width: $lg-breakpoint) {
+            padding: 1rem 1rem 1rem 1rem;
+        }
         .navigation {
             @media screen and (max-width: $lg-breakpoint) {
-                top: 3.5rem !important;
+                top: 4.9rem !important;
+            }
+            @media screen and (max-width: $sm-breakpoint) {
+                top: 4.5rem !important;
             }
         }
     }
@@ -403,6 +409,9 @@ header {
     }
     @media screen and (max-width: $xl-breakpoint) {
         padding: 1rem 1rem 0.5rem 1rem;
+    }
+    @media screen and (max-width: $sm-breakpoint) {
+        padding: 1rem 1rem 1rem 1rem;
     }
     .header-inner {
         .img-wrapper {
@@ -453,13 +462,16 @@ header {
         }
         .navigation {
             .menu-area {
-                gap: 3rem;
                 padding-left: 0rem;
-                @media screen and (max-width: 1440px) {
-                    gap: 2rem;
-                }
-                @media screen and (max-width: $xl-breakpoint) {
-                    gap: 0.1rem;
+
+                li {
+                    margin-right: 2rem;
+                    @media screen and (max-width: 1440px) {
+                        margin-right: 1.5rem;
+                    }
+                    &:last-child {
+                        margin-right: 0rem;
+                    }
                 }
                 @media screen and (max-width: $xl-breakpoint) {
                     flex-direction: column;
@@ -489,9 +501,12 @@ header {
                 }
             }
             li {
+                background-color: transparent !important;
                 &:hover {
-                    .dropdown-menu {
-                        display: block !important;
+                    @media screen and (min-width: $xl-breakpoint) {
+                        .dropdown-menu {
+                            display: block !important;
+                        }
                     }
                 }
                 .dropdown-menu {
@@ -2599,7 +2614,7 @@ footer {
                             -webkit-transition: all 200ms ease-in;
                             -webkit-transform: scale(1.5);
                             -ms-transition: all 200ms ease-in;
-                            -ms-transform: scale(1.5);   
+                            -ms-transform: scale(1.5);
                             -moz-transition: all 200ms ease-in;
                             -moz-transform: scale(1.5);
                             transition: all 200ms ease-in;

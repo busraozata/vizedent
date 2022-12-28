@@ -135,8 +135,20 @@ header.sticky {
 }
 
 @media screen and (max-width: 991px) {
+  header.sticky {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
   header.sticky .navigation {
-    top: 3.5rem !important;
+    top: 4.9rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header.sticky .navigation {
+    top: 4.5rem !important;
   }
 }
 
@@ -149,6 +161,12 @@ header.sticky {
 @media screen and (max-width: 1200px) {
   header {
     padding: 1rem 1rem 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
 
@@ -213,20 +231,21 @@ header .header-inner #toggle-btn i {
 }
 
 header .header-inner .navigation .menu-area {
-  gap: 3rem;
   padding-left: 0rem;
 }
 
+header .header-inner .navigation .menu-area li {
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 1440px) {
-  header .header-inner .navigation .menu-area {
-    gap: 2rem;
+  header .header-inner .navigation .menu-area li {
+    margin-right: 1.5rem;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  header .header-inner .navigation .menu-area {
-    gap: 0.1rem;
-  }
+header .header-inner .navigation .menu-area li:last-child {
+  margin-right: 0rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -275,8 +294,14 @@ header .header-inner .navigation .menu-area {
   }
 }
 
-header .header-inner .navigation li:hover .dropdown-menu {
-  display: block !important;
+header .header-inner .navigation li {
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 1200px) {
+  header .header-inner .navigation li:hover .dropdown-menu {
+    display: block !important;
+  }
 }
 
 header .header-inner .navigation li .dropdown-menu {
