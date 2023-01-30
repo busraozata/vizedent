@@ -21,12 +21,18 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 100);
 });
 
+/* $("#preloader")
+  .delay(2000)
+  .fadeOut("slow", function () {
+    $(this).remove();
+  });
+ */
 $(function () {
-  $("#datepicker").datepicker({
+  /* $("#datepicker").datepicker({
     autoclose: true,
     todayHighlight: true,
     allowInputToggle: true,
-  });
+  }); */
   /* .datepicker("update", new Date()); */
 });
 
@@ -44,7 +50,23 @@ var swiperContent = new Swiper(".mySwiperContent", {
   },
 });
 
-var swiperNews = new Swiper(".mySwiperNews", {});
+var swiperNews = new Swiper(".mySwiperNews", {
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
 
 var swiperBlog = new Swiper(".mySwiperBlog", {
   spaceBetween: 20,
